@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> Activity 4 </title>
+</head>
+
+<body>
+    <h3> Model Deployment in Local Web App </h3>
+	<h1 style="color: Blue;"> Predicting Profit with R&D Spend </h1>
+
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="spending" placeholder="R&D spend amount" required="required" /><br><br>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict profit</button>
+    </form>
+
+   <h4 style="color: Blue;">
+   {{ prediction_output }} </h4>
+
+</body>
+</html>
